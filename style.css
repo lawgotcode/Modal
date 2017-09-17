@@ -26,6 +26,8 @@ body {
 	width: 100%;
 	overflow: auto;
 	background-color: rgba(0,0,0,0.5);
+	animation-name:modalopen;
+	animation-duration:1s;
 }
 
 .modal-content {
@@ -47,4 +49,9 @@ body {
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+@keyframes modalopen {
+	from{opacity: 0}
+	to {opacity: 1}
 }
